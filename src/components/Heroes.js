@@ -21,7 +21,7 @@ export default function Heroes(){
     useEffect(() => {
         axios.request(options)
         .then((res) => {
-          console.log(res.data)
+          console.log(res.data, "Response Data")
         })
         .catch(err => console.error(err))
       }, [currentHero])
