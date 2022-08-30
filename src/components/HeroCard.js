@@ -4,26 +4,30 @@ import React, {useEffect, useState} from 'react';
 //Hero Card Blueprint
 //Add to team Button that adds to a team mock DB
 
-function HeroCard (hero){
+export default function HeroCard ({ newHero }){
+     console.log(newHero, "Response Data fro Hero card")
+   
     return(  
             <div className="card">
-                <h2>{hero.name}</h2>
-                <img src={hero.img} />
-                {/* {isAdopted ? null : <button>Adopt</button>} */}
-                <p>{abilities}</p>
-                <p>{race}</p>
-                <p>{weight}</p>
-                <p>{height}</p>
-                <p>{fullname}</p>
-                <p>{id}</p>
-                <ul>PowerStats:
-                    <li>{powerstats.combat}</li>
-                    <li>{powerstats.durability}</li>
-                    <li>{powerstats.intelligence}</li>
-                    <li>{powerstats.power}</li>
-                    <li>{powerstats.speed}</li>
-                    <li>{powerstats.strength}</li>
-                </ul>
+                <div className="cardBody">
+                    <h3>{newHero.team}</h3>
+                    <h1>{newHero.superHeroName}</h1>
+                    <img src={newHero.image} alt="card"/>
+                    <p>{newHero.alliance}</p>
+                    <p>{newHero.race}</p>
+                    <p>{newHero.weight}</p>
+                    <p>{newHero.height}</p>
+                    <p>"Civilian Name: "{newHero.civilianName}</p>
+                    <p>Hero ID: {newHero.Id}</p>
+                    <ul>PowerStats:
+                        <li>{newHero.powerStats.combat}</li>
+                        <li>{newHero.powerStats.durability}</li>
+                        <li>{newHero.powerStats.intelligence}</li>
+                        <li>{newHero.powerStats.power}</li>
+                        <li>{newHero.powerStats.speed}</li>
+                        <li>{newHero.powerStats.strength}</li>
+                    </ul> 
+                </div>
             </div>
     )
 }
