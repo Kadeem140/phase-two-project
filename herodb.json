@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "heroes": [
     {
       "id": 1,
       "title": "json-server",
