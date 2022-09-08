@@ -9,10 +9,9 @@ export default function HeroCard ({ heroCard }){
      console.log(heroCard, "Response Data fro Hero card")
 
      function postHeroData(hero){
-        Event.preventDefault();
+        // Event.preventDefault();
         console.log('POST DATA HERO HERE',hero)
-        axios.request({
-            url: `http://localhost:3000/heroes`, 
+        fetch(`http://localhost:3000/heroes`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -31,23 +30,24 @@ export default function HeroCard ({ heroCard }){
     return(  
             <div className="card">
                 <div className="cardBody">
-                    <h3>{heroCard.team}</h3>
-                    <h1>{heroCard.superHeroName}</h1>
+                    <h3>PUBLISHER: {heroCard.team}</h3>
+                    <h1>NAME: {heroCard.superHeroName}</h1>
                     <img src={heroCard.image} alt="card"/>
-                    <p>{heroCard.alliance}</p>
-                    <p>{heroCard.race}</p>
-                    <p>{heroCard.weight}</p>
-                    <p>{heroCard.height}</p>
+                    <p>ALLIANCE: {heroCard.alliance}</p>
+                    <p>RACE: {heroCard.race}</p>
+                    <p>WEIGHT: {heroCard.weight}</p>
+                    <p>HEIGHT: {heroCard.height}</p>
                     <p>"Civilian Name: "{heroCard.civilianName}</p>
                     <p>Hero ID: {heroCard.Id}</p>
                     <ul>PowerStats:
-                        <li>{heroCard.powerStats.combat}</li>
-                        <li>{heroCard.powerStats.durability}</li>
-                        <li>{heroCard.powerStats.intelligence}</li>
-                        <li>{heroCard.powerStats.power}</li>
-                        <li>{heroCard.powerStats.speed}</li>
-                        <li>{heroCard.powerStats.strength}</li>
+                        <li>COMBAT: {heroCard.powerStats.combat}</li>
+                        <li>DURABILTIY: {heroCard.powerStats.durability}</li>
+                        <li>INTELLIGENCE: {heroCard.powerStats.intelligence}</li>
+                        <li>POWER: {heroCard.powerStats.power}</li>
+                        <li>SPEED: {heroCard.powerStats.speed}</li>
+                        <li>STRENGTH: {heroCard.powerStats.strength}</li>
                     </ul> 
+                    <button onClick={postHeroData(heroCard)}>Add to Team</button>
                 </div>
             </div>
     )
