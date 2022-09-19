@@ -1,38 +1,6 @@
 {
   "heroes": [
     {
-      "id": "",
-      "Id": "",
-      "alliance": "",
-      "civilianName": "",
-      "height": "",
-      "image": "",
-      "powerStats": {
-        "combat": "",
-        "durability": "",
-        "intelligence": "",
-        "power": "",
-        "speed": "",
-        "strength": ""
-      },
-      "race": "",
-      "superHeroName": "",
-      "team": "",
-      "weight": ""
-    },
-    {
-      "id": "VU36ClW"
-    },
-    {
-      "id": "5KoLFSG"
-    },
-    {
-      "id": "8c7jpz7"
-    },
-    {
-      "id": "HK18tO-"
-    },
-    {
       "team": "Marvel Comics",
       "superHeroName": "Spider-Man",
       "image": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/620-spider-man.jpg",
@@ -50,37 +18,7 @@
       "height": "5'10",
       "civilianName": "Peter Parker",
       "Id": 620,
-      "id": "qPzJJAC"
-    },
-    {
-      "team": "Marvel Comics",
-      "superHeroName": "Spider-Man",
-      "image": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/620-spider-man.jpg",
-      "alliance": "good",
-      "powerStats": {
-        "combat": 85,
-        "durability": 75,
-        "intelligence": 90,
-        "power": 74,
-        "speed": 67,
-        "strength": 55
-      },
-      "race": "Human",
-      "weight": "165 lb",
-      "height": "5'10",
-      "civilianName": "Peter Parker",
-      "Id": 620,
-      "id": "eaCpWxM"
+      "id": 1
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -2,6 +2,7 @@
 import './App.css';
 import Heroes from './components/Heroes';
 import HeroForm from './components/HeroForm';
+import NavBar from "./components/NavBar";
 import React, { useEffect, useState} from 'react'
 import HeroCard from './components/HeroCard';
 
@@ -36,6 +37,8 @@ function App() {
 
   return (
     <div className="App">
+
+    <NavBar />
 
           <h1>Marvel App</h1>
       <HeroForm 
